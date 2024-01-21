@@ -39,8 +39,11 @@ html {
   }
   
   footer {
-    padding-left: 20px;
     font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
   }
 
   .background-image {
