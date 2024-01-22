@@ -165,6 +165,10 @@ html {
       flex: 0 0 100%;
       margin-bottom: 70px;
     }
+
+    .container {
+      padding: 40px;
+    }
   
     #light {
       background-color: #939ecc;
