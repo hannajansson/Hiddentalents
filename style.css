@@ -78,22 +78,15 @@ html {
     font-size: 18px;
   }
   
-  /* Apply italic style to a specific portion of text */
-  .italic-text {
-    font-style: italic;
-    font-weight: 400;
-    color: #939ecc;
-  }
-  
   .container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
     padding: 60px;
   }
   
   .textblock {
-    flex: 0 0 100%; /* Takes up 100% of the container width */
-    min-height: 100px; /* Set a minimum height to occupy space vertically */
+    flex: 0 0 100%;
+    min-height: 100px;
     box-sizing: border-box;
     margin-bottom: 20px;
   }
@@ -101,18 +94,18 @@ html {
   .box {
     box-sizing: border-box;
     padding-right: 60px;
-    width: 50%; /* Set width to half of the container */
+    width: 50%;
   }
   
   .img-text {
     box-sizing: border-box;
-    width: 46%; /* Set width to half of the container */
+    width: 46%;
     padding-top: 20px;
   }
   
   .container-light {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
     padding: 60px;
     background-color: #939ecc;
     color: #251b23;
@@ -124,7 +117,7 @@ html {
   }
   
   .text-container {
-    flex: 1; /* Grow to fill available space */
+    flex: 1;
   }
   
   .text-container p {
@@ -132,14 +125,14 @@ html {
   }
   
   .block {
-    flex: 0 0 46%; /* Each block takes up 48% of the container width with a little gap between them */
+    flex: 0 0 46%;
     box-sizing: border-box;
-    margin-bottom: 40px; /* Add some space between blocks */
+    margin-bottom: 40px;
     margin-right: 40px;
   }
   
   .block-arrang {
-    flex: 0 0 30%; /* Each block takes up about 32% of the container width */
+    flex: 0 0 30%;
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-right: 40px;
@@ -154,25 +147,22 @@ html {
     margin-bottom: 10px;
   }
   
-  /* Style all links with color and underline */
   a {
-    color: #939ecc; /* Set the default color of the links */
-    text-decoration: none; /* Remove the default underline */
+    color: #939ecc;
+    text-decoration: none;
     transition:
       color 0.3s,
-      border-color 0.3s; /* Add a smooth transition effect */
+      border-color 0.3s;
   }
   
-  /* Hover effect to change color and reveal the underline */
   a:hover {
-    color: #f5ab04; /* Set the color of the links on hover */
+    color: #f5ab04;
   }
   
   @media (max-width: 767px) {
-    /* Apply styles for screens with a maximum width of 600px (e.g., phones) */
     .block,
     .block-arrang {
-      flex: 0 0 100%; /* Each block takes up 100% of the container width on smaller screens */
+      flex: 0 0 100%;
       margin-bottom: 70px;
     }
   
@@ -185,10 +175,12 @@ html {
     .image-container {
       margin-right: 0;
     }
-    /* Adjust styles for smaller screens (phones) */
+    
     .box {
-      width: 100%; /* Set width to full width of the container */
+      width: 100%;
+      padding-right: 10px;
     }
+
     .background-image {
       width: 80%;
       padding-bottom: 20px;
