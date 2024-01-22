@@ -1,13 +1,15 @@
 html {
     height: 100%;
+    width: auto;
   }
   
   body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: #251B23;
-    color: #939ECC;
+    background-color: #251b23;
+    color: #939ecc;
+    box-sizing: border-box;
   }
   
   header {
@@ -19,7 +21,7 @@ html {
   #logo {
     font-size: 80px;
     font-weight: 800;
-    color: #F5AB04;
+    color: #f5ab04;
   }
   
   nav {
@@ -27,7 +29,7 @@ html {
   }
   
   nav a {
-    color: #939ECC;
+    color: #939ecc;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -43,9 +45,9 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
   }
-
+  
   .background-image {
     margin-left: 50px;
     width: 60%;
@@ -59,13 +61,19 @@ html {
     font-weight: 600;
     line-height: 1.2;
   }
-
+  
   h2 {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.2;
   }
-
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
   p {
     font-size: 18px;
   }
@@ -74,80 +82,106 @@ html {
   .italic-text {
     font-style: italic;
     font-weight: 400;
-    color: #939ECC;
+    color: #939ecc;
   }
-
+  
   .container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     padding: 60px;
-    padding-bottom: 100px;
   }
-
+  
   .textblock {
+    flex: 0 0 100%; /* Takes up 100% of the container width */
+    min-height: 100px; /* Set a minimum height to occupy space vertically */
     box-sizing: border-box;
-    padding-bottom: 40px;
+    margin-bottom: 20px;
   }
-
+  
   .box {
     box-sizing: border-box;
-    width: 46%; /* Set width to half of the container */
+    padding-right: 60px;
+    width: 50%; /* Set width to half of the container */
   }
-
+  
   .img-text {
     box-sizing: border-box;
     width: 46%; /* Set width to half of the container */
     padding-top: 20px;
   }
-
-  #light {
-    background-color: #939ECC;
-    color: #251B23;
-  }
-
-  .block {
+  
+  .container-light {
     display: flex;
-    box-sizing: border-box;
-    padding-right: 50px;
-    width: 50%;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    padding: 60px;
+    background-color: #939ecc;
+    color: #251b23;
   }
-
-  .image-container {
-    flex: 0 0 auto; /* Do not grow or shrink */
-    margin-right: 20px; /* Add some spacing between image and text */
-  }
-
+  
   .image-container img {
     max-width: 100%;
     height: auto;
   }
-
+  
   .text-container {
     flex: 1; /* Grow to fill available space */
   }
-
+  
   .text-container p {
     margin: 0;
   }
-
-    /* Style all links with color and underline */
-    a {
-        color: #939ECC; /* Set the default color of the links */
-        text-decoration: none; /* Remove the default underline */
-        transition: color 0.3s, border-color 0.3s; /* Add a smooth transition effect */
-      }
   
-      /* Hover effect to change color and reveal the underline */
-      a:hover {
-        color: #F5AB04; /* Set the color of the links on hover */
-      }
-
+  .block {
+    flex: 0 0 46%; /* Each block takes up 48% of the container width with a little gap between them */
+    box-sizing: border-box;
+    margin-bottom: 40px; /* Add some space between blocks */
+    margin-right: 40px;
+  }
+  
+  .block-arrang {
+    flex: 0 0 30%; /* Each block takes up about 32% of the container width */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 40px;
+  }
+  
+  .image-container {
+    margin-bottom: 10px;
+    width: 30%;
+  }
+  
+  .text-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style all links with color and underline */
+  a {
+    color: #939ecc; /* Set the default color of the links */
+    text-decoration: none; /* Remove the default underline */
+    transition:
+      color 0.3s,
+      border-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Hover effect to change color and reveal the underline */
+  a:hover {
+    color: #f5ab04; /* Set the color of the links on hover */
+  }
+  
   @media (max-width: 767px) {
-    /* Apply styles for screens with a maximum width of 600px */
-    .block {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+    /* Apply styles for screens with a maximum width of 600px (e.g., phones) */
+    .block,
+    .block-arrang {
+      flex: 0 0 100%; /* Each block takes up 100% of the container width on smaller screens */
+      margin-bottom: 70px;
     }
-
+  
+    #light {
+      background-color: #939ecc;
+      color: #251b23;
+      width: 76%;
+    }
+  
     .image-container {
       margin-right: 0;
     }
@@ -157,5 +191,6 @@ html {
     }
     .background-image {
       width: 80%;
+      padding-bottom: 20px;
     }
   }
