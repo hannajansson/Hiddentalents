@@ -166,14 +166,8 @@ html {
       margin-bottom: 70px;
     }
 
-    .container {
-      padding: 40px;
-    }
-  
-    #light {
-      background-color: #939ecc;
-      color: #251b23;
-      width: 76%;
+    .container, .container-light {
+        padding: 40px;
     }
   
     .image-container {
