@@ -174,7 +174,8 @@ html {
 
     /* Hover effect */
     .custom-btn:hover {
-      background-color: #2980b9; /* Change background color on hover */
+      background-color: #362733; /* Change background color on hover */
+      color: #939ecc; 
     }
   
   @media (max-width: 767px) {
