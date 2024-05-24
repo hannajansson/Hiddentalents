@@ -19,9 +19,8 @@ html {
   }
   
   #logo {
-    font-size: 80px;
-    font-weight: 800;
-    color: #f5ab04;
+    height: 80px;
+    width: 10%;
   }
   
   nav {
