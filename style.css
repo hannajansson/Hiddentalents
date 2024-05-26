@@ -103,6 +103,12 @@ html {
     padding-right: 60px;
     width: 50%;
   }
+
+  .imgsize {
+    width: 300px;
+    height: auto;
+  }
+
   
   .img-text {
     box-sizing: border-box;
