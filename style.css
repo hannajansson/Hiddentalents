@@ -63,22 +63,26 @@ html {
     font-size: 58px;
     font-weight: 600;
     line-height: 1.2;
+    text-align: center;
   }
   
   h2 {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.2;
+    text-align: center;
   }
   
   h3 {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.2;
+    text-align: center;
   }
   
   p {
     font-size: 18px;
+    text-align: center;
   }
   
   .container {
