@@ -178,6 +178,9 @@ html {
     /* Style for the button */
     .custom-btn {
       display: inline-block;
+      position: fixed;
+      left: 50%;
+      margin: 50px;  
       padding: 10px 20px;
       background-color: #251b23; /* Button background color */
       color: #939ecc; /* Text color */
